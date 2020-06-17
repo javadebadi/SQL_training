@@ -2,12 +2,12 @@
 # the MetaData object will be filled with metadata of a table
 # the Table object will get the metadata of a table from database
 from sqlalchemy import create_engine, MetaData, Table
+from paths import *
 
 # path to databases location in windows
 driver_database_name = "sqlite:///"
-path_to_dbs = "C:\\Users\\Javad\\github\\SQL_training\\databases\\"
 db_name = "census.sqlite"
-connection_string = driver_database_name + path_to_dbs + db_name
+connection_string = driver_database_name + path_to_SQLite_dbs + db_name
 
 # Create an engine that connects to the census.sqlite file: engine
 engine = create_engine(connection_string)
