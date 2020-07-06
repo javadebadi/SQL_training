@@ -3,7 +3,7 @@ from sqlalchemy import create_engine, MetaData
 from sqlalchemy import Table, Column, String, Integer, Float, Boolean
 
 # get connection string
-connection_string = get_connection_string("census.sqlite")
+connection_string = get_connection_string("new_db.sqlite")
 # create engine
 engine = create_engine(connection_string)
 
